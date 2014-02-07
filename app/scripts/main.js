@@ -1,1 +1,6 @@
-console.log('\'Allo \'Allo!');
+
+$(function () {
+
+	$('#hammertime').carousel({ interval: false });
+
+});
