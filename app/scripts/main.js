@@ -5,7 +5,7 @@ $(function () {
 
 	var targetEl = document.getElementById('hammertime');
 
-	Hammer(targetEl).on('swipe', function (e) {
+	Hammer(targetEl, { drag: false, tap: false, transform: false, hold: false, swipe_velocity: 0.2 }).on('swipe', function (e) {
 		console.log('Someone touched this');
 		console.dir(e);
 	});
